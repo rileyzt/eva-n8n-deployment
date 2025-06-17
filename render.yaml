@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: eva-n8n
+    env: docker
+    plan: starter
+    dockerfilePath: docker-compose.yml
+    buildCommand: ""
+    startCommand: "docker-compose up"
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: "admin"
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "admin123"
+      - key: WEBHOOK_URL
+        value: "https://eva-ai-agent-erp.onrender.com"
