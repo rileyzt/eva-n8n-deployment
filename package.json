@@ -1,0 +1,12 @@
+{
+  "name": "eva-n8n-agent",
+  "version": "1.0.0",
+  "description": "Minimal N8N Starter",
+  "main": "startn8n.js",
+  "scripts": {
+    "start": "node startn8n.js"
+  },
+  "dependencies": {
+    "n8n": "^1.38.0"
+  }
+}
